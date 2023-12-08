@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>CATALOGUE</title>
+  </head>
+
+  <body onload="afficherRec()">
+    <div class="container1">
+      <nav>
+        <div class="coter">
+          <div class="log">
+            <img id="im" src="./2-removebg-preview.png" alt="" />
+          </div>
+          <h3>Recettes Gourmandes</h3>
+        </div>
+        <ul class="responsive">
+          <li><a href="../html/index.html">Acceuil</a></li>
+          <li><a href="../html/catalogue.html">Recettes</a></li>
+          <li><a href="#contacte">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+      <h1>Nos Recettes</h1>
+
+      <p class="con-p">
+        "Notre site propose diverses catégories de recettes pour tous les goûts
+        comme les pates, la cuisine végétarienne,et des plats traditionelles
+        Quel que soit votre style culinaire ou vos préférences alimentaires,
+        nous avons une catégorie qui correspond à vos besoins et envies !"
+      </p>
+    </div>
+    <div class="sea-bar">
+      <div class="men">
+        <label for="cat-selc">filtrer par catégorie</label>
+        <select id="cat-selc" onchange="rechercheCtg()">
+          <option value="">Tout les categories</option>
+          <option value="Entrée">entree</option>
+          <option value="Plat principal">Plat principal</option>
+          <option value="Dîner">Dîner</option>
+          <option value="Déjeuner">Déjeuner</option>
+          <option value="Petit déjeuner">Petit déjeuner</option>
+          <option value="Plat">Plat</option></select
+        ><br />
+      </div>
+      <form class="search-box">
+        <input type="text" placeholder="Appuyez sur vos recettes" id="sea" />
+        <button type="reset"></button>
+      </form>
+    </div>
+    <div id="recc"><!-- here work with js  --></div>
+    <footer>
+      <div class="cont">
+        <div class="row">
+          <div id="contacte" class="col-md-4">
+            <h3>Connecte-toi avec nous</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">
+          &copy; Site Web gourmand 2023. Tous les droits sont réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/recettesDB.js"></script>
+  <script src="../js/catalouge.js"></script>
+</html>
